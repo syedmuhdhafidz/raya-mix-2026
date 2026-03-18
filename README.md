@@ -1,4 +1,4 @@
-# Raya Mix 2026
+# Raya Mix 2026 ❇️✨🌙
 
 A festive Raya music web player inspired by a glassmorphism UI concept, rebuilt for 2026.
 
@@ -26,7 +26,7 @@ raya-mix-2026/
     └── ui/
 ```
 
-## How to Run
+## How to Run (Offline)
 
 1. Download or clone this repository
 2. Open the project folder
@@ -49,8 +49,8 @@ raya-mix-2026/
 Currently in active development and UI refinement
 
 ## Author
-Syed
+syedmuhdhafidz
 
 ## Disclaimer
 All rights and credits belong to their respective owners.
-This website shall not be used to gain profit using other artists work.
+This website shall not be used to gain profit using others' artwork.
