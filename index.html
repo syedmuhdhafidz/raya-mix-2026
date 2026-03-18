@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raya Mix 2026</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <div class="app-shell">
+      <main class="layout">
+        <section class="playlist-panel glass-card">
+          <div class="playlist-header">
+            <p class="eyebrow">Festive Collection</p>
+            <h1>Raya Mix 2026</h1>
+            <p class="playlist-subtitle">
+              Our festive collection of cherished Raya classics.
+            </p>
+
+            <div class="search-bar">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search songs, artists, or vibes..."
+              />
+            </div>
+
+            <div class="playlist-actions">
+              <button class="btn btn-primary" id="playAllBtn">Play</button>
+              <button class="btn" id="shuffleBtn">Shuffle</button>
+              <button class="btn" id="shareBtn" type="button">Share</button>
+            </div>
+          </div>
+
+          <div class="track-list" id="trackList">
+            <!-- Song rows will be added here later -->
+          </div>
+        </section>
+
+        <aside class="curated-panel glass-card">
+          <div class="mascot-wrap">
+            <img
+              src="assets/mascot/ketupat_mascot.png"
+              alt="3D ketupat mascot"
+              class="mascot-image"
+            />
+          </div>
+
+          <div class="curated-header">
+            <h2>Curated For You</h2>
+            <p>Festive picks and Raya-inspired highlights.</p>
+          </div>
+
+          <div class="curated-grid">
+            <button class="curated-item" type="button">
+              <img
+                src="assets/ui/oil_lamp.png"
+                alt="Modern Oil Lamp"
+                class="curated-thumb"
+              />
+              <span>Modern Oil Lamp</span>
+            </button>
+
+            <button class="curated-item" type="button">
+              <img
+                src="assets/ui/crescent_moon.png"
+                alt="Golden Crescent"
+                class="curated-thumb"
+              />
+              <span>Golden Crescent</span>
+            </button>
+
+            <button class="curated-item" type="button">
+              <img
+                src="assets/ui/sampul_raya.png"
+                alt="Sampul Raya"
+                class="curated-thumb"
+              />
+              <span>Sampul Raya</span>
+            </button>
+          </div>
+          <div class="recently-played">
+            <h3>Recently Played</h3>
+            <div class="recent-row" id="recentRow"></div>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="player-bar glass-card">
+        <div class="now-playing">
+          <img
+            src="assets/covers/aidilfitri.jfif"
+            alt="Current cover"
+            id="nowPlayingCover"
+          />
+          <div class="now-playing-meta">
+            <h3 id="nowPlayingTitle">No song selected</h3>
+            <p id="nowPlayingArtist">Choose a Raya classic to begin</p>
+          </div>
+        </div>
+
+        <div class="player-controls">
+          <button class="icon-btn" id="prevBtn" type="button">⏮</button>
+          <button class="icon-btn play-btn" id="playPauseBtn" type="button">
+            ▶
+          </button>
+          <button class="icon-btn" id="nextBtn" type="button">⏭</button>
+        </div>
+
+        <div class="player-progress">
+          <span id="currentTime">0:00</span>
+          <input type="range" id="seekBar" min="0" max="100" value="0" />
+          <span id="duration">0:00</span>
+        </div>
+      </footer>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
